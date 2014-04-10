@@ -9,6 +9,8 @@ If there will be more time to spare, eventually this app will support all kinds 
 
 The application itself is developed using C++/Qt. Only standard windows and Qt libraries are used. 
 
+You can download the binaries at the official page: http://morf.lv/modules.php?name=projects&lasit=17
+
 Usage
 =====
 Well it is quite simple, just select a modifier key, which will be the key to activate the application, and then you can set the volume keys by focusing on the fields accordingly. All keys can be customized. 
