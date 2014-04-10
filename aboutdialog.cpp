@@ -34,6 +34,12 @@ AboutDialog::AboutDialog(QWidget *parent) :
     ui->setupUi(this);
 }
 
+void AboutDialog::closeEvent(QCloseEvent *e)
+{
+    e->ignore();
+    this->hide();
+}
+
 AboutDialog::~AboutDialog()
 {
     delete ui;

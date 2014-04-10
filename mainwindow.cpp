@@ -74,7 +74,7 @@ MainWindow::MainWindow(QWidget *parent) :
     volumeDown = 0;
     muteButton = 0;
 
-    volumePopup = new VolumePopup(this);
+    volumePopup = new VolumePopup();
 
     this->hide();
 
@@ -123,6 +123,7 @@ void MainWindow::runStartup(bool run)
 void MainWindow::about()
 {
     aboutDialog->exec();
+    qDebug() << "DAFUQ0";
 }
 
 void MainWindow::iconActivated(QSystemTrayIcon::ActivationReason reason)
@@ -177,6 +178,8 @@ void MainWindow::volumeMuteKeyChanged(QString key)
 
 MainWindow::~MainWindow()
 {
+    delete volumePopup;
+    delete aboutDialog;
     delete ui;
 }
 

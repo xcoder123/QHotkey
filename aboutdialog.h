@@ -28,6 +28,7 @@ THE SOFTWARE.
 #define ABOUTDIALOG_H
 
 #include <QDialog>
+#include <QCloseEvent>
 
 namespace Ui {
 class AboutDialog;
@@ -43,6 +44,9 @@ public:
 
 private:
     Ui::AboutDialog *ui;
+
+protected:
+    void closeEvent(QCloseEvent *e);
 };
 
 #endif // ABOUTDIALOG_H
